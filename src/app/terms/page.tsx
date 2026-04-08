@@ -35,7 +35,7 @@ export default function Terms() {
 
           <p style={{ marginBottom: 20 }}>
             These terms govern your use of shanepark.com and the Client
-            Reporting platform at clients.shanepark.com, operated by Shane Park.
+            Reporting platform at clients.shanepark.com, operated by Shane Park Media Group LLC.
           </p>
 
           <h2 style={{ fontFamily: "'Space Grotesk', sans-serif", fontSize: 20, fontWeight: 700, margin: "32px 0 12px" }}>
@@ -83,8 +83,8 @@ export default function Terms() {
           </h2>
           <p style={{ marginBottom: 20 }}>
             Questions? Email{" "}
-            <a href="mailto:shane.park@gmail.com" style={{ color: "#C4A44A", textDecoration: "underline" }}>
-              shane.park@gmail.com
+            <a href="mailto:shane@shanepark.com" style={{ color: "#C4A44A", textDecoration: "underline" }}>
+              shane@shanepark.com
             </a>
             .
           </p>

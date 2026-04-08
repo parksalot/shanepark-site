@@ -34,7 +34,7 @@ export default function Privacy() {
           </p>
 
           <p style={{ marginBottom: 20 }}>
-            Shane Park (&quot;we,&quot; &quot;us&quot;) operates shanepark.com
+            Shane Park Media Group LLC (&quot;we,&quot; &quot;us&quot;) operates shanepark.com
             and the Client Reporting platform at clients.shanepark.com. This
             policy describes how we handle information.
           </p>
@@ -83,8 +83,8 @@ export default function Privacy() {
           </h2>
           <p style={{ marginBottom: 20 }}>
             Questions about this policy? Email{" "}
-            <a href="mailto:shane.park@gmail.com" style={{ color: "#C4A44A", textDecoration: "underline" }}>
-              shane.park@gmail.com
+            <a href="mailto:shane@shanepark.com" style={{ color: "#C4A44A", textDecoration: "underline" }}>
+              shane@shanepark.com
             </a>
             .
           </p>
