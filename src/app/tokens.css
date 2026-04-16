@@ -1,0 +1,58 @@
+/*
+ * Shane Park OS — Design Tokens
+ * Single source of truth. Aligned with google-ads-audit design system.
+ * All values WCAG-verified. Do not add inline hex literals — use these.
+ */
+
+:root {
+  /* ——— Surfaces ——— */
+  --paper: #f5f0eb;
+  --paper-2: #efe9df;
+  --soft: #ffffff;
+
+  /* ——— Ink (text) ——— */
+  --ink: #1a1a1a;          /* 15.2:1 on paper — AAA */
+  --ink-soft: #3a3a3a;     /* 10.8:1 on paper — AAA */
+  --warm: #6b645e;         /*  5.0:1 on paper — AA  */
+
+  /* ——— Brand ——— */
+  --gold: #c4a44a;         /* Decorative only — not for body text */
+
+  /* ——— Borders ——— */
+  --border: #e5e0db;
+
+  /* ——— Typography ——— */
+  --font-display: 'Space Grotesk', system-ui, sans-serif;
+  --font-body: 'DM Sans', system-ui, sans-serif;
+
+  /* ——— Type Scale ——— */
+  --text-xs: 11px;
+  --text-sm: 13px;
+  --text-base: 14px;
+  --text-md: 16px;
+  --text-lg: 20px;
+  --text-xl: 28px;
+  --text-2xl: 36px;
+  --text-3xl: 48px;
+
+  /* ——— Spacing (8px grid) ——— */
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-6: 24px;
+  --s-8: 32px;
+  --s-10: 40px;
+  --s-12: 48px;
+  --s-16: 64px;
+
+  /* ——— Radii ——— */
+  --radius-sm: 6px;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+
+  /* ——— Shadows ——— */
+  --shadow-sm: 0 1px 2px rgba(26, 26, 26, 0.04);
+  --shadow-md: 0 1px 3px rgba(26, 26, 26, 0.05), 0 8px 24px -12px rgba(26, 26, 26, 0.06);
+}

@@ -7,7 +7,7 @@ export default function Home() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: "48px 24px",
+        padding: "var(--s-12) var(--s-6)",
       }}
     >
       <div style={{ maxWidth: 640, width: "100%", textAlign: "center" }}>
@@ -15,21 +15,21 @@ export default function Home() {
           style={{
             width: 72,
             height: 72,
-            background: "#C4A44A",
-            borderRadius: 16,
+            background: "var(--gold)",
+            borderRadius: "var(--radius-lg)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            margin: "0 auto 32px",
+            margin: "0 auto var(--s-8)",
           }}
         >
           <span
             style={{
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: "var(--font-display)",
               fontWeight: 700,
-              fontSize: 28,
-              color: "#1A1A1A",
-              letterSpacing: -1,
+              fontSize: "var(--text-xl)",
+              color: "var(--ink)",
+              letterSpacing: "-0.025em",
             }}
           >
             SP
@@ -38,12 +38,12 @@ export default function Home() {
 
         <h1
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontSize: 48,
+            fontFamily: "var(--font-display)",
+            fontSize: "var(--text-3xl)",
             fontWeight: 700,
-            letterSpacing: -2,
+            letterSpacing: "-0.04em",
             lineHeight: 1.1,
-            marginBottom: 16,
+            marginBottom: "var(--s-4)",
           }}
         >
           Shane Park
@@ -51,10 +51,10 @@ export default function Home() {
 
         <p
           style={{
-            fontSize: 18,
-            color: "#78716C",
+            fontSize: "var(--text-md)",
+            color: "var(--warm)",
             lineHeight: 1.6,
-            marginBottom: 48,
+            marginBottom: "var(--s-12)",
           }}
         >
           Digital advertising strategy, campaign management, and performance
@@ -64,7 +64,7 @@ export default function Home() {
         <div
           style={{
             display: "flex",
-            gap: 16,
+            gap: "var(--s-4)",
             justifyContent: "center",
             flexWrap: "wrap",
           }}
@@ -72,14 +72,14 @@ export default function Home() {
           <a
             href="mailto:shane.park@gmail.com"
             style={{
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: "var(--font-display)",
               fontWeight: 600,
-              fontSize: 15,
-              background: "#1A1A1A",
-              color: "#F5F0EB",
-              padding: "14px 28px",
-              borderRadius: 10,
-              letterSpacing: 0.3,
+              fontSize: "var(--text-base)",
+              background: "var(--ink)",
+              color: "var(--paper)",
+              padding: "var(--s-3) var(--s-6)",
+              borderRadius: "var(--radius)",
+              letterSpacing: "0.02em",
             }}
           >
             Get in touch
@@ -87,15 +87,15 @@ export default function Home() {
           <a
             href="https://clients.shanepark.com"
             style={{
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: "var(--font-display)",
               fontWeight: 600,
-              fontSize: 15,
-              background: "#fff",
-              color: "#1A1A1A",
-              padding: "14px 28px",
-              borderRadius: 10,
-              border: "1px solid #E5E0DB",
-              letterSpacing: 0.3,
+              fontSize: "var(--text-base)",
+              background: "var(--soft)",
+              color: "var(--ink)",
+              padding: "var(--s-3) var(--s-6)",
+              borderRadius: "var(--radius)",
+              border: "1px solid var(--border)",
+              letterSpacing: "0.02em",
             }}
           >
             Client portal
@@ -106,11 +106,11 @@ export default function Home() {
       <footer
         style={{
           position: "absolute",
-          bottom: 32,
+          bottom: "var(--s-8)",
           display: "flex",
-          gap: 24,
-          fontSize: 13,
-          color: "#9CA3AF",
+          gap: "var(--s-6)",
+          fontSize: "var(--text-sm)",
+          color: "var(--warm)",
         }}
       >
         <a href="/privacy" style={{ textDecoration: "underline" }}>

@@ -7,7 +7,7 @@ export default function ClientLogin() {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        padding: "48px 24px",
+        padding: "var(--s-12) var(--s-6)",
       }}
     >
       <div style={{ maxWidth: 400, width: "100%", textAlign: "center" }}>
@@ -15,21 +15,21 @@ export default function ClientLogin() {
           style={{
             width: 56,
             height: 56,
-            background: "#C4A44A",
-            borderRadius: 12,
+            background: "var(--gold)",
+            borderRadius: "var(--radius-lg)",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            margin: "0 auto 24px",
+            margin: "0 auto var(--s-6)",
           }}
         >
           <span
             style={{
-              fontFamily: "'Space Grotesk', sans-serif",
+              fontFamily: "var(--font-display)",
               fontWeight: 700,
-              fontSize: 20,
-              color: "#1A1A1A",
-              letterSpacing: -1,
+              fontSize: "var(--text-lg)",
+              color: "var(--ink)",
+              letterSpacing: "-0.025em",
             }}
           >
             CR
@@ -38,12 +38,12 @@ export default function ClientLogin() {
 
         <h1
           style={{
-            fontFamily: "'Space Grotesk', sans-serif",
-            fontSize: 32,
+            fontFamily: "var(--font-display)",
+            fontSize: "var(--text-xl)",
             fontWeight: 700,
-            letterSpacing: -1.5,
+            letterSpacing: "-0.04em",
             lineHeight: 1.1,
-            marginBottom: 8,
+            marginBottom: "var(--s-2)",
           }}
         >
           Client Reporting
@@ -51,9 +51,9 @@ export default function ClientLogin() {
 
         <p
           style={{
-            fontSize: 15,
-            color: "#78716C",
-            marginBottom: 40,
+            fontSize: "var(--text-base)",
+            color: "var(--warm)",
+            marginBottom: "var(--s-10)",
           }}
         >
           Sign in to view your performance reports.
@@ -61,23 +61,24 @@ export default function ClientLogin() {
 
         <div
           style={{
-            background: "#fff",
-            borderRadius: 16,
-            padding: "32px 28px",
-            boxShadow: "0 1px 3px rgba(0,0,0,0.04)",
+            background: "var(--soft)",
+            borderRadius: "var(--radius-lg)",
+            padding: "var(--s-8) var(--s-6)",
+            boxShadow: "var(--shadow-sm)",
+            border: "1px solid var(--border)",
           }}
         >
           <label
             style={{
               display: "block",
               textAlign: "left",
-              fontSize: 13,
+              fontSize: "var(--text-xs)",
               fontWeight: 600,
-              color: "#78716C",
-              marginBottom: 8,
-              fontFamily: "'Space Grotesk', sans-serif",
+              color: "var(--warm)",
+              marginBottom: "var(--s-2)",
+              fontFamily: "var(--font-display)",
               textTransform: "uppercase",
-              letterSpacing: 0.5,
+              letterSpacing: "0.16em",
             }}
           >
             Email address
@@ -88,29 +89,29 @@ export default function ClientLogin() {
             disabled
             style={{
               width: "100%",
-              padding: "14px 16px",
-              borderRadius: 10,
-              border: "1px solid #E5E0DB",
-              fontSize: 15,
-              fontFamily: "'DM Sans', sans-serif",
-              background: "#FAFAF8",
-              color: "#9CA3AF",
+              padding: "var(--s-3) var(--s-4)",
+              borderRadius: "var(--radius)",
+              border: "1px solid var(--border)",
+              fontSize: "var(--text-base)",
+              fontFamily: "var(--font-body)",
+              background: "var(--paper)",
+              color: "var(--warm)",
               outline: "none",
-              marginBottom: 20,
+              marginBottom: "var(--s-4)",
             }}
           />
           <button
             disabled
             style={{
               width: "100%",
-              padding: "14px",
-              borderRadius: 10,
+              padding: "var(--s-3)",
+              borderRadius: "var(--radius)",
               border: "none",
-              background: "#1A1A1A",
-              color: "#F5F0EB",
-              fontFamily: "'Space Grotesk', sans-serif",
+              background: "var(--ink)",
+              color: "var(--paper)",
+              fontFamily: "var(--font-display)",
               fontWeight: 600,
-              fontSize: 15,
+              fontSize: "var(--text-base)",
               cursor: "not-allowed",
               opacity: 0.5,
             }}
@@ -119,9 +120,9 @@ export default function ClientLogin() {
           </button>
           <p
             style={{
-              fontSize: 12,
-              color: "#9CA3AF",
-              marginTop: 16,
+              fontSize: "var(--text-xs)",
+              color: "var(--warm)",
+              marginTop: "var(--s-4)",
             }}
           >
             Coming soon. Contact your account manager for access.
@@ -132,11 +133,11 @@ export default function ClientLogin() {
       <footer
         style={{
           position: "absolute",
-          bottom: 32,
+          bottom: "var(--s-8)",
           display: "flex",
-          gap: 24,
-          fontSize: 13,
-          color: "#9CA3AF",
+          gap: "var(--s-6)",
+          fontSize: "var(--text-sm)",
+          color: "var(--warm)",
         }}
       >
         <a href="/" style={{ textDecoration: "underline" }}>
