@@ -1,88 +1,125 @@
-import Link from "next/link";
-import TechBanner from "./TechBanner";
-import CTA from "@/components/CTA";
-import { INDUSTRIES, SERVICES } from "@/lib/content";
-
 export default function Home() {
   return (
-    <div className="wrap wrap-wide">
-      <section className="hero">
-        <h1 className="hero-title">
-          Most ad accounts aren&rsquo;t underperforming. They&rsquo;re
-          misreporting.
+    <div
+      style={{
+        minHeight: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        padding: "var(--s-12) var(--s-6)",
+      }}
+    >
+      <div style={{ maxWidth: 640, width: "100%", textAlign: "center" }}>
+        <div
+          style={{
+            width: 72,
+            height: 72,
+            background: "var(--gold)",
+            borderRadius: "var(--radius-lg)",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            margin: "0 auto var(--s-8)",
+          }}
+        >
+          <span
+            style={{
+              fontFamily: "var(--font-display)",
+              fontWeight: 700,
+              fontSize: "var(--text-xl)",
+              color: "var(--ink)",
+              letterSpacing: "-0.025em",
+            }}
+          >
+            SP
+          </span>
+        </div>
+
+        <h1
+          style={{
+            fontFamily: "var(--font-display)",
+            fontSize: "var(--text-3xl)",
+            fontWeight: 700,
+            letterSpacing: "-0.04em",
+            lineHeight: 1.1,
+            marginBottom: "var(--s-4)",
+          }}
+        >
+          Shane Park
         </h1>
-        <p className="hero-lede">
-          I run Google, Meta, and Amazon advertising for eCommerce brands that
-          want the numbers to be true. That usually starts by finding out what the
-          reporting has been getting wrong &mdash; because in every account
-          I&rsquo;ve opened in the last two years, something in the measurement
-          was broken before anything in the strategy was.
+
+        <p
+          style={{
+            fontSize: "var(--text-md)",
+            color: "var(--warm)",
+            lineHeight: 1.6,
+            marginBottom: "var(--s-12)",
+          }}
+        >
+          Digital advertising strategy, campaign management, and performance
+          reporting for brands that want clarity on where their money goes.
         </p>
-        <div className="hero-actions">
-          <Link href="/teardown" className="btn btn-primary">
-            Request a teardown
-          </Link>
-          <Link href="/method" className="btn btn-secondary">
-            How I work
-          </Link>
-        </div>
-      </section>
 
-      <section className="section">
-        <p className="eyebrow">What I do</p>
-        <div className="rows">
-          {SERVICES.map((service) => (
-            <div key={service.slug} className="row">
-              <p className="row-name">{service.name}</p>
-              <div>
-                <p className="row-body">{service.summary}</p>
-                <Link href={`/services/${service.slug}`} className="row-more">
-                  {service.navName} &rarr;
-                </Link>
-              </div>
-            </div>
-          ))}
+        <div
+          style={{
+            display: "flex",
+            gap: "var(--s-4)",
+            justifyContent: "center",
+            flexWrap: "wrap",
+          }}
+        >
+          <a
+            href="mailto:shane.park@gmail.com"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontWeight: 600,
+              fontSize: "var(--text-base)",
+              background: "var(--ink)",
+              color: "var(--paper)",
+              padding: "var(--s-3) var(--s-6)",
+              borderRadius: "var(--radius)",
+              letterSpacing: "0.02em",
+            }}
+          >
+            Get in touch
+          </a>
+          <a
+            href="https://clients.shanepark.com"
+            style={{
+              fontFamily: "var(--font-display)",
+              fontWeight: 600,
+              fontSize: "var(--text-base)",
+              background: "var(--soft)",
+              color: "var(--ink)",
+              padding: "var(--s-3) var(--s-6)",
+              borderRadius: "var(--radius)",
+              border: "1px solid var(--border)",
+              letterSpacing: "0.02em",
+            }}
+          >
+            Client portal
+          </a>
         </div>
-      </section>
+      </div>
 
-      <section className="section">
-        <p className="eyebrow">Who I work with</p>
-        <div className="rows">
-          {INDUSTRIES.map((industry) => (
-            <div key={industry.slug} className="row">
-              <p className="row-name">{industry.name}</p>
-              <div>
-                <p className="row-body">{industry.summary}</p>
-                <Link href={`/industries/${industry.slug}`} className="row-more">
-                  {industry.navName} &rarr;
-                </Link>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      <section className="section">
-        <p className="eyebrow">Agencies</p>
-        <div className="rows">
-          <div className="row">
-            <p className="row-name">Fractional ad ops</p>
-            <div>
-              <p className="row-body">
-                Agencies are full of good people doing work a machine should be
-                doing. I come in for a defined stretch, automate the manual
-                reporting and account work, train the team, and leave.
-              </p>
-              <Link href="/for-agencies" className="row-more">
-                For agencies &rarr;
-              </Link>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <TechBanner />
-      <CTA />
+      <footer
+        style={{
+          position: "absolute",
+          bottom: "var(--s-8)",
+          display: "flex",
+          gap: "var(--s-6)",
+          fontSize: "var(--text-sm)",
+          color: "var(--warm)",
+        }}
+      >
+        <a href="/privacy" style={{ textDecoration: "underline" }}>
+          Privacy
+        </a>
+        <a href="/terms" style={{ textDecoration: "underline" }}>
+          Terms
+        </a>
+      </footer>
     </div>
   );
 }

@@ -5,6 +5,3 @@ out/
 *.tsbuildinfo
 next-env.d.ts
 .playwright-mcp/
-
-# Session screenshots — deliverables, not source
-*.png
